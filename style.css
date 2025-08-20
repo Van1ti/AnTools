@@ -87,11 +87,16 @@ select {
 
 .tools {
     margin: 0 auto;
-    max-width: 1440px;
     background-image: url(./img/bg.png);
+    
 }
 
-.tools_title {
+.tools_container{
+    margin: 0 auto;
+    max-width: 1215px;
+}
+
+.tools_container--title{
     font-family: Poppins;
     font-weight: 500;
     font-size: 50px;
@@ -104,7 +109,7 @@ select {
 }
 
 
-.tools_text {
+.tools_container--text {
     font-family: Poppins;
     font-weight: 400;
     font-size: 18px;
@@ -124,20 +129,43 @@ select {
     color: #e85a2a;
 }
 
-.tools_search--container {
+.tools_container--box {
+
+    width: 100%;
+    max-width: 500px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: #2a2f36;
-    padding: 5px;
+
+    padding: 8px 11px 8px 18px;
     border-radius: 15px;
-    overflow: hidden;
-    max-width: 498px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+
+    /* фон самой коробки */
+    background-color: #283036;
+
+    /* граница: прозрачная, чтобы просвечивал второй фон */
+    border: 1.5px solid transparent;
+
+    /* ДВА слоя фона:
+     1) сплошной фон (идёт в padding-box)
+     2) градиент (идёт в border-box и виден как рамка)
+  */
+    background:
+        linear-gradient(#283036, #283036) padding-box,
+        linear-gradient(90.89deg, rgba(255, 255, 255, 0.1) -1.67%, rgba(255, 255, 255, 0) 103.73%) border-box;
+
+    /* помогает старым WebKit корректно клипать слои */
+    background-clip: padding-box, border-box;
 }
 
+.tools_container--box--input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
 
-.tools_search--container input {
+.tools_container--box--input input {
     border: none;
     background: transparent;
     color: white;
@@ -149,26 +177,21 @@ select {
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 0%;
-
 }
 
-.tools_search--container {
-    padding-left: 18px;
-}
 
-.tools_search--container input::placeholder {
+.tools_container--box--input input::placeholder {
     color: #aaa;
+    background-color: #283036;
 }
 
-.tools_search--container button {
+.tools_container--box button {
     background-color: #ff6b35;
     border: none;
     padding: 12px 36px;
     font-size: 14px;
     cursor: pointer;
     border-radius: 8px;
-    margin-right: 7px;
-    margin-left: 111px;
     font-family: Poppins;
     font-weight: 600;
     font-size: 16px;
@@ -179,11 +202,11 @@ select {
     height: 48px;
 }
 
-.tools_search--container button:hover {
+.tools_container--box button:hover {
     background-color: #e85a2a;
 }
 
-.tools_icons {
+.tools_container--icons {
     max-width: 190px;
     width: 100%;
     display: flex;

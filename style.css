@@ -600,3 +600,104 @@ select {
     background-color: #FF6E30;
     color: #FFFFFF;
 }
+
+.profile {
+    margin: 0 auto;
+    max-width: 1224px;
+    background: url("./img/bg.jpg") no-repeat center/cover;
+    margin-bottom: 251px;
+}
+
+.profile_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    margin: 0 auto;
+}
+
+.profile_container--select--content--text {
+    width: 100%;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 1.5%;
+    color: #FFFFFFC7;
+    max-width: 383px;
+    height: 180px;
+}
+
+.profile_container--select--content {
+    position: relative;
+}
+
+.profile_container--select--content p {
+    position: relative;
+    z-index: 1;
+}
+
+.quote-mark {
+    width: 103px;
+    height: 320px;
+    font-family: "Lora", serif;
+    font-family: Lora;
+    font-weight: 500;
+    font-size: 250px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(188.88deg,
+            rgba(252, 252, 252, 0) 20.34%,
+            rgba(255, 255, 255, 0.5) 155.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotate(19.17deg);
+}
+
+.profile_container--select--nav {
+    position: absolute;
+    max-width: 1224px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.profile_container--select--nav span {
+    pointer-events: auto;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #FFFFFF47;
+    user-select: none;
+    transition: 0.3s ease;
+}
+
+.profile_container--select--nav span:hover {
+    color: #FF6E30;
+}
+
+.dots {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 168px;
+    margin-top: 100px;
+}
+
+.dots--dot {
+    width: 44px;
+    height: 6px;
+    background-color: #283036;
+    border-radius: 4px;
+    border: none;
+}
+
+.dots--dot:hover {
+    width: 44px;
+    height: 8px;
+    background-color: #FF6E30;
+    cursor: pointer;
+}

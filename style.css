@@ -701,3 +701,184 @@ select {
     background-color: #FF6E30;
     cursor: pointer;
 }
+
+.contributor {
+    max-width: 553px;
+    margin: 0 auto;
+}
+
+.contributor_title {
+    margin: 0 auto;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFFE5;
+    margin-bottom: 25px;
+}
+
+.contributor_text {
+    width: 427px;
+    margin: 0 auto;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF8C;
+    margin-bottom: 100px;
+}
+
+.contributor--box {
+
+    width: 100%;
+    max-width: 549px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 11px 8px 18px;
+    border-radius: 15px;
+
+    /* фон самой коробки */
+    background-color: #283036;
+
+    /* граница: прозрачная, чтобы просвечивал второй фон */
+    border: 1.5px solid transparent;
+
+    /* ДВА слоя фона:
+     1) сплошной фон (идёт в padding-box)
+     2) градиент (идёт в border-box и виден как рамка)
+  */
+    background:
+        linear-gradient(#283036, #283036) padding-box,
+        linear-gradient(90.89deg, rgba(255, 255, 255, 0.1) -1.67%, rgba(255, 255, 255, 0) 103.73%) border-box;
+
+    /* помогает старым WebKit корректно клипать слои */
+    background-clip: padding-box, border-box;
+    margin-bottom: 240px;
+}
+
+.contributor--box input {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF61;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background-color: #283036;
+    border: none;
+}
+
+.contributor--box button {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    background-color: #FF6E30;
+    padding: 12px 35px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
+}
+
+.line {
+    border: 0.5px solid #FFFFFF26;
+}
+
+.footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 156px;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 98px;
+}
+
+
+.footer_box--title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 27px;
+}
+
+.footer_box--title h3 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFFE5;
+}
+
+.footer_box--copy {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFFE5;
+    margin-bottom: 21px;
+}
+
+.footer_box--text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    color: #FFFFFF8C;
+    width: 260px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 115px;
+}
+
+.footer_container--box {
+    display: block;
+}
+
+.footer_container--box h3 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFFE5;
+    margin-bottom: 20px;
+}
+
+.footer_container--box--info p {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF8C;
+    margin-bottom: 10px;
+}
+
+.footer_container--box--nav {
+    display: grid;
+    row-gap: 10px;
+}
+
+.footer_container--box--nav--link {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF8C;
+}

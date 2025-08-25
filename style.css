@@ -785,6 +785,7 @@ select {
     border-radius: 8px;
     border: none;
     box-shadow: none;
+    cursor: pointer;
 }
 
 .line {

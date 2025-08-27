@@ -797,7 +797,8 @@ select {
     margin: 0 auto;
     display: flex;
     gap: 156px;
-    align-items: center;
+    justify-content: space-between;
+    align-items: start;
     margin-top: 70px;
     margin-bottom: 98px;
 }

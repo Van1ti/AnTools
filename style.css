@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
     margin: 0;
@@ -69,6 +70,7 @@ select {
     color: #FFFFFF8C;
     background-color: #1E252B;
     border: #1E252B;
+    cursor: pointer;
 }
 
 .header_btns--btn--1 {
@@ -81,11 +83,15 @@ select {
     background-color: #FF6E30;
     border: #FF6E30;
     border-radius: 8px;
-    padding: 12px 20px 12px 20px;
+    padding: 12px 24px 12px 24px;
     margin-left: 41px;
+    cursor: pointer;
+    width: 120px;
+    height: 48px;
 }
 
 .tools {
+    max-width: 1440px;
     margin: 0 auto;
     background-image: url(./img/bg.png);
     height: 570px;
@@ -263,6 +269,9 @@ select {
     width: 392px;
     height: 294px;
     border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, ease;
+    cursor: pointer;
 }
 
 .grid_container--box:hover {
@@ -270,7 +279,6 @@ select {
         background-color: #FF6E30;
         color: #FFFFFF;
     }
-
 
     background-image: url(./img/Rectangle\ 5.png);
 
@@ -291,6 +299,11 @@ select {
         border: none;
         border-radius: 8px;
     }
+
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+    transition-duration: 1s;
 }
 
 .grid_container--box--header {
@@ -392,6 +405,7 @@ select {
     background-color: #1E252B;
     padding: 9px 35px;
     border-style: none;
+    cursor: pointer;
 }
 
 
@@ -410,6 +424,7 @@ select {
     display: block;
     margin: 0 auto;
     margin-top: 100px;
+    cursor: pointer;
 }
 
 .brand {
@@ -492,6 +507,7 @@ select {
     border-radius: 8px;
     box-shadow: none;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -534,6 +550,11 @@ select {
     }
 
     background-image: url(./img/Rectangle\ 5\ \(1\).png);
+
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+    transition-duration: 1s;
 }
 
 .newTools_container--box--header {
@@ -626,6 +647,7 @@ select {
     background-color: #1E252B;
     padding: 9px 35px;
     border-style: none;
+    cursor: pointer;
 }
 
 
@@ -657,27 +679,25 @@ select {
     height: 180px;
 }
 
-.profile_container--select--content {
-    position: relative;
-}
-
 .profile_container--select--content p {
     position: relative;
-    z-index: 1;
+    margin-left: 57px;
 }
 
 .quote-mark {
-    width: 103px;
-    height: 320px;
     font-family: Lora;
     font-weight: 500;
     font-size: 250px;
     line-height: 100%;
-    position: relative;
-    background: linear-gradient(188.88deg, rgba(252, 252, 252, 0) 20.34%, rgba(255, 255, 255, 0.5) 155.72%);
+    position: absolute;
+    background: linear-gradient(188.88deg, rgba(252, 252, 252, 0) 15%, rgba(255, 255, 255, 0.5) 155.72%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: rotate(19.17deg);
+    max-width: 103px;
+    max-height: 320px;
+    margin-bottom: 70px;
+    margin-left: 65px;
 }
 
 .profile_container--select--nav {
@@ -758,7 +778,7 @@ select {
 
 .contributor--box {
 
-    
+    max-height: 55px;
     max-width: 549px;
     display: flex;
     justify-content: space-between;
@@ -810,6 +830,8 @@ select {
     border: none;
     box-shadow: none;
     cursor: pointer;
+    width: 130px;
+    height: 48px;
 }
 
 .line {
@@ -906,4 +928,11 @@ select {
     line-height: 100%;
     letter-spacing: 0%;
     color: #FFFFFF8C;
+    text-decoration: none;
+}
+
+.footer_container--box--nav--link:hover {
+    color: #e85a2a;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 2s;
 }
